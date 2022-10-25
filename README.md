@@ -10,17 +10,17 @@ Based on the publicly available native SDKs from [SEON Fraud API](https://docs.s
 ## Installation
 
 ```sh
-yarn add smarkets/react-native-seon#vX.X.X
+yarn add hubpay/react-native-seon#vX.X.X
 ```
 
 ## Usage
 
 ```js
-import RNSeon from 'react-native-seon';
+import Seon from 'react-native-seon';
 
 // Optional configuration
-await RNSeon.setSessionId('CUSTOM_SESSION_ID');
-await RNSeon.setLoggingEnabled(true /* or false */);
+await Seon.setSessionId('CUSTOM_SESSION_ID');
+await Seon.setLoggingEnabled(true /* or false */);
 
 // Compute device fingerprint
 const fingerprint = await RNSeon.getFingerprintBase64();
